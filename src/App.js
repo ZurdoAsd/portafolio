@@ -1,21 +1,20 @@
 import './App.css';
-import Navbar from './components/Navbar.jsx';
-import Skills from './components/Skills.jsx';
-import Project from './components/Projects.jsx';
-import Footer from './components/Footer.jsx';
-import Contact from './components/Contact.jsx';
-import Banner from './components/Banner.jsx'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./home/home.jsx";
+import Detailes from "./home/Details.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Banner/>
-      <Skills/>
-      <Project/>
-      <Contact/>
-      <Footer/>
+      <Router>
+      <Routes>    
+        <Route path="/" element={<Home />}  />
+        <Route exact path="/home/:id" element={<Detailes/>} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </Router>
+
     </div>
   );
 }

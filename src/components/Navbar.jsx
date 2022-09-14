@@ -10,21 +10,21 @@ export default function Navbar2() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" id="home">
       <Container>
-        <Navbar.Brand href="#home">Welcome to my Portfolio </Navbar.Brand>
+        <Navbar.Brand className="mr-1" href="#home">My Portfolio </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#project">Projects</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Project1</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Project2</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Project3</NavDropdown.Item>
+            <NavDropdown title="Social media" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="https://github.com/ZurdoAsd" target="_blank" rel="noopener noreferrer">Git Hub</NavDropdown.Item>
+              <NavDropdown.Item href="https://www.linkedin.com/in/aldo-gaspar" target="_blank"rel="noopener noreferrer">Linkedin</NavDropdown.Item>
+              <NavDropdown.Item href="https://www.instagram.com/dr.al.do" target="_blank" rel="noopener noreferrer">Instagram</NavDropdown.Item>
               </NavDropdown> 
           </Nav>
           <Nav>
-            <Nav.Link eventKey={2} href="#memes">Dank Themes</Nav.Link>
+            <Nav.Link className="ms-auto" eventKey={2} href="#contact">Contact me</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,8 +1,14 @@
 .contact {
-    background:#ffffff77;
+    /* background:#ffffff77; */
+
+    background: url("../fondos/contact.jpg")no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    min-width: 100vw;
     padding: 60px 0 200px 0;
+    min-height: 100vh;
     height: 100%;
-    min-height: 100vh
+   
   }
   .row2{
       align-items:center;
@@ -18,7 +24,7 @@
     margin-bottom: 30px;
   }
   .contact form input, .contact form textarea {
-    width: 85%;
+    width: 100%;
     background: rgba(255, 255, 255, 0.5);
     border: 2px solid gray;
     border-radius: 20px;

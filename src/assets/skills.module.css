@@ -1,38 +1,58 @@
 
-
 .skill {
     padding: 3em 0 3em 0;
-    position: relative;
     min-height: 100vh;
     height: 100%;
-    background-color:#ffffff77;
-  }
+  background: url(
+   "../fondos/skills.jpg") no-repeat center center;
+ background-size: cover;   
+ width: 100%;
+ 
+}
 
   .skill h2 {
       font-size: 45px;
       font-weight: 700;
   }
+  .skill h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: start;
+    margin-left: 1em;
+    margin-top: 1em;
+}
   .skill p {
       font-size: 18px;
       letter-spacing: 0.8px;
       line-height: 1.5em;
-      margin: 14px 0 75px 0;
-  }
-  .skillslider {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-  }
-  .skillslider img {
-    width: 50%;
-    margin: 0 auto 15px auto;
-  }
-  .item img {
-    width: 50%;
-    margin: 0 auto 15px auto;
+      margin: 0 0 2px 0;
+      text-align: left;
+      margin-left: 1em;
+      font-weight: bold;
   }
   .skill .stick img {
     width: 60px;
     height: 60px;
+  margin-left: 2em;
   }
   
+  .stick{
+   width:100%; 
+ display: inline-block;
+text-align: left;
+margin-left: 2em;
+margin-right: 2em;
+margin-bottom: 2em;
+  }
+  
+  .stick h3{
+margin-left: 0;
+margin-bottom: 0.8em;
+width:90%
+  }
+  .stick p{
+    margin-bottom: 0.5em;
+    width: 70%;
+    text-align:justify
+      }
+      

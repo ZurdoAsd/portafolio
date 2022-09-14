@@ -6,7 +6,6 @@ import validate from "./validate"
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-  const {REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID,REACT_APP_PUBLIC_KEY }= process.env
   const [buttonText, setButtonText] = useState('Send');
   const [error, setError] = useState({});
   const [input, setInput] = useState({

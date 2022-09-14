@@ -1,38 +1,15 @@
 import React from 'react'
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import Card  from "./Card";
- import projpokeload from "../assets/pokeapi/landingpoke.jpeg";
- import projclub from "../assets/CLub/landingclub.jpeg";
-
+import{projects} from "../constantes.js";
+ import { NavLink } from "react-router-dom";
 import s from "../assets/projects.module.css"
 
 export default function Projects() {
 
-  const projects = [
-    {
-      title: "Poke-app",
-      description: "Design & Development",
-      imgUrl: projpokeload,
-      Url:"https://club-henry.vercel.app"
-    },
-    {
-      title: "Club Deportivo",
-      description: "Design & Development",
-      imgUrl: projclub,
-      Url:"https://poke-app-19.vercel.app/"
-      
-    },
-
-  ];
-  const projectsGrup = [
-    {
-      title: "Club Deportivo",
-      description: "Design & Development",
-      imgUrl: projclub,
-      Url:"https://club-henry.vercel.app"
-    },
-
-  ];
+  const single = projects.filter(e=> e.type==="single");
+  const group = projects.filter(e=> e.type!=="single")
+  
 
   return (
     <section className={s.project} id="project">
@@ -44,32 +21,44 @@ export default function Projects() {
                   que vayan surguiendo segun mi aprendizaje, asi espero que no sean exigentes
                    con los primeros. </p>
                 <p>Tambien saber mas sobre el proyecto al seleccionar sobre ellos</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                <Tab.Container id="projects-tabs" defaultActiveKey="cero">
                   <Nav
-                   variant="pills"
+                    variant="pills"
                     className="nav-pills mb-5 justify-content-center align-items-center" 
                     id="pills-tab">
+                        <Nav.Item> <Nav.Link eventKey="cero">All</Nav.Link></Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="first">individual projects</Nav.Link>
-                    </Nav.Item>
+                      <Nav.Link eventKey="first">Individual</Nav.Link></Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">group projects</Nav.Link>
-                    </Nav.Item>
+                      <Nav.Link eventKey="second">Group</Nav.Link></Nav.Item>
+                    
+                     
                   </Nav>
                   
                   <Tab.Content>
+                  <Tab.Pane eventKey="cero">
+                      <Row >
+                        {projects.map((e) => {
+                            return (<NavLink to={"/home/"+ e.title}> 
+                            <Card  key={e.id}imgUrl={e.imgUrl} title={e.title} description={e.description} /> </NavLink>)})
+                        }
+                      </Row>
+                    </Tab.Pane>
                     <Tab.Pane eventKey="first">
                       <Row>
-                        {  projects.map((project, index) => {
-                            return (<Card key={index}{...project} /> )})
+                        {single.map((e) => {
+                            return (<NavLink to={"/home/"+ e.title}> 
+                            <Card  key={e.id}imgUrl={e.imgUrl} title={e.title} description={e.description} /> </NavLink>)})
                         }
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                     <Row>
-                    {projectsGrup.map((project, index) => {
-                            return (<Card key={index} {...project} />) }) }
-                         </Row>
+                    {group.map((e) => {
+                            return (
+                              <NavLink to={"/home/"+ e.title}> 
+                              <Card key={e.id}imgUrl={e.imgUrl} title={e.title} description={e.description} imgs={e.imgs}  /> </NavLink>)}) }
+                    </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

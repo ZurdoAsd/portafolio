@@ -22,9 +22,7 @@ export default function Navbar2() {
               <NavDropdown.Item href="https://www.linkedin.com/in/aldo-gaspar" target="_blank"rel="noopener noreferrer">Linkedin</NavDropdown.Item>
               <NavDropdown.Item href="https://www.instagram.com/dr.al.do" target="_blank" rel="noopener noreferrer">Instagram</NavDropdown.Item>
               </NavDropdown> 
-          </Nav>
-          <Nav>
-            <Nav.Link className="ms-auto" eventKey={2} href="#contact">Contact me</Nav.Link>
+              <Nav.Link href="#contact">Contact me</Nav.Link> 
           </Nav>
         </Navbar.Collapse>
       </Container>

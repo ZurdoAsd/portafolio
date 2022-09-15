@@ -22,15 +22,17 @@ export default function Projects() {
                    con los primeros. </p>
                 <p>Tambien saber mas sobre el proyecto al seleccionar sobre ellos</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="cero">
-                  <Nav
-                    variant="pills"
-                    className="nav-pills mb-5 justify-content-center align-items-center" 
-                    id="pills-tab">
-                        <Nav.Item> <Nav.Link eventKey="cero">All</Nav.Link></Nav.Item>
+                  <Nav 
+                 variant="pills"
+                  className="mb-5 mt-5 mr-5 justify-content-center align-items-center text-dark fw-bold" 
+                id="pills-tab"
+                  >
+                 <Nav.Item>
+                           <Nav.Link eventKey="cero" className={s.mod}>All</Nav.Link></Nav.Item>
+                    <Nav.Item >
+                      <Nav.Link eventKey="first"className={s.mod}>Individual</Nav.Link></Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Individual</Nav.Link></Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Group</Nav.Link></Nav.Item>
+                      <Nav.Link eventKey="second" className={s.mod}>Group</Nav.Link></Nav.Item>
                     
                      
                   </Nav>
@@ -39,16 +41,16 @@ export default function Projects() {
                   <Tab.Pane eventKey="cero">
                       <Row >
                         {projects.map((e) => {
-                            return (<NavLink to={"/home/"+ e.title}> 
-                            <Card  key={e.id}imgUrl={e.imgUrl} title={e.title} description={e.description} /> </NavLink>)})
+                            return (<NavLink to={"/home/"+ e.title}key={e.id}> 
+                            <Card  imgUrl={e.imgUrl} title={e.title} description={e.description} /> </NavLink>)})
                         }
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {single.map((e) => {
-                            return (<NavLink to={"/home/"+ e.title}> 
-                            <Card  key={e.id}imgUrl={e.imgUrl} title={e.title} description={e.description} /> </NavLink>)})
+                            return (<NavLink to={"/home/"+ e.title}key={e.id}> 
+                            <Card  imgUrl={e.imgUrl} id={e.id} title={e.title} description={e.description} /> </NavLink>)})
                         }
                       </Row>
                     </Tab.Pane>
@@ -56,8 +58,8 @@ export default function Projects() {
                     <Row>
                     {group.map((e) => {
                             return (
-                              <NavLink to={"/home/"+ e.title}> 
-                              <Card key={e.id}imgUrl={e.imgUrl} title={e.title} description={e.description} imgs={e.imgs}  /> </NavLink>)}) }
+                              <NavLink to={"/home/"+ e.title}key={e.id}> 
+                              <Card imgUrl={e.imgUrl} id={e.id}title={e.title} description={e.description} imgs={e.imgs}  /> </NavLink>)}) }
                     </Row>
                     </Tab.Pane>
                   </Tab.Content>

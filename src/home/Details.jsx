@@ -65,7 +65,7 @@ export default function Details( ) {
         {
         det.fotos.map(e => {
           return (
-            <div className={s.item}>
+            <div className={s.item} key={e.id}>
               <img src={e.nameimg} alt="foto"/>
               <h5>{e.title}</h5>
             </div>

@@ -10,7 +10,7 @@ export default function Banner() {
     <section className={s.banner}>
       <Container>
         <Row>
-          <Col xs={12} md={8} xl={9} className="m-auto">
+          <Col xs={12} md={8} xl={9} className="order-1 order-sm-0">
             <h1>
               {`Aldo Gaspar`} </h1>
               <br />     
@@ -25,7 +25,7 @@ export default function Banner() {
                <button onClick={()=>setMore(!more)}className={s.more}>
               About me
               </button>   
-             {more?(    <div>
+             {more?(    <div className="mb-2">
             <p> Por cierto si, el sujeto de la foto, mi comienzo no fue facil por que no tengo ningun estudio previo IT, lo que contrario a lo parece no fue un limitante
                sino una motivacion para poder estar a nivel de mis compañeros, lo que dio lugar a varias noches intentando resolver ejercicios
                en forma individual y con ayuda de compañeros, y sentir que empezaba a avanzar.  </p>
@@ -34,7 +34,7 @@ export default function Banner() {
             </p></div>
               ):null}
           </Col>
-          <Col xs={12} md={4} xl={3}>
+          <Col xs={12} md={4} xl={3} className="order-0 order-sm-1">
             <div className={s.perfil}>
             <img src={aux1} alt="perfil" />
             </div>

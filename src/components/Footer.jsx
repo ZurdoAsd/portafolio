@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/aux2.jpg";
 import s from "../assets/footer.module.css"
 import Nav from 'react-bootstrap/Nav';
 import {
@@ -22,9 +21,11 @@ export default function Footer() {
          <FaArrowUp/>
         </button></Nav.Link>
           <Col size={6} sm={6} className={s.blockimg}>
-            <img src={logo} alt="Logo" />
+          <h2>Thanks for visit my portafolio!</h2>
+         
           </Col>
-          <Col size={20} sm={6} className={s.blockimgright}>
+          <Col size={12} sm={6} className={s.blockimgright}>
+             <h3>Visit my social networks :{"  "} </h3>
             <div className={s.socialIcon}>
               <a href="https://www.linkedin.com/in/aldo-gaspar" target="_blank"rel="noopener noreferrer">
                 <FaLinkedin/>

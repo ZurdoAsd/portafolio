@@ -15,17 +15,15 @@ export default function Projects() {
     <section className={s.project} id="project">
       <Container>
         <Row>
-          <Col size={12}>
+          <Col size={12} className="mx-auto">
                 <h2>Projects</h2>
                 <p>A traves de esta seccion del portafolio intentare ir subiendo diversos proyectos 
                   que vayan surguiendo segun mi aprendizaje, asi espero que no sean exigentes
                    con los primeros. </p>
                 <p>Tambien saber mas sobre el proyecto al seleccionar sobre ellos</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="cero">
-                  <Nav 
-                 variant="pills"
+                  <Nav   
                   className="mb-5 mt-5 mr-5 justify-content-center align-items-center text-dark fw-bold" 
-                id="pills-tab"
                   >
                  <Nav.Item>
                            <Nav.Link eventKey="cero" className={s.mod}>All</Nav.Link></Nav.Item>

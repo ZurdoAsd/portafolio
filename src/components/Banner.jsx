@@ -25,7 +25,7 @@ export default function Banner() {
                <button onClick={()=>setMore(!more)}className={s.more}>
               About me
               </button>   
-             {more?(    <div className="mb-2">
+             {more?( <div className="mb-2">
             <p> Por cierto si, el sujeto de la foto, mi comienzo no fue facil por que no tengo ningun estudio previo IT, lo que contrario a lo parece no fue un limitante
                sino una motivacion para poder estar a nivel de mis compañeros, lo que dio lugar a varias noches intentando resolver ejercicios
                en forma individual y con ayuda de compañeros, y sentir que empezaba a avanzar.  </p>

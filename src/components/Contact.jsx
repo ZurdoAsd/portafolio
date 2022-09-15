@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import s from "../assets/contact.module.css"
+import s from "../assets/contact.module.css";
+import {servicemail,templateemail,service2email} from "../constantes";
 import validate from "./validate"
 import emailjs from '@emailjs/browser';
 
@@ -39,12 +40,7 @@ export default function Contact() {
       !Object.keys(error).length
     ){
     setButtonText("Sending...");
-    emailjs.sendForm('service_017r5w8','template_qteph3f',e.target,'y-qa3iJiDmglHVCU6')
-      .then((result) => {
-          console.log(result.text); 
-      }, (error) => {
-          console.log(error.text);
-      });
+    emailjs.sendForm(servicemail,templateemail,e.target,service2email)
     setButtonText("Send");
     setInput({name: '',last: '',email: '',phone: '', message: ''
     });

@@ -50,3 +50,7 @@ export const projects = [
     description: " Esto no lo considero una habildad en si misma, sino que forma parte de mi formacion autodidacta, ya que voy a requerir ayuda de alguien, es necesario realizar un esfuerzo previo, pues el tiempo prestado por los demas es valioso, y el provecho que le puedo sacar va a ser mayor si las dudas que comparto surgen luego de haberlo intentado."
    },
   ]
+
+  export const servicemail='service_017r5w8'
+  export const templateemail='template_qteph3f'
+  export const service2email='y-qa3iJiDmglHVCU6'

@@ -28,7 +28,6 @@ export default function Details( ) {
   };
 
   let det = projects.find((e) => e.title.trim() === id);
-  console.log(det);
   const handleReturn = () => {
     navigate('/home');
 }

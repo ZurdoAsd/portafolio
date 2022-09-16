@@ -5,21 +5,21 @@ export default function validate(input) {
     const telefonoRegExp = /^\d{7,14}$/;
 
     if (input.name && !nameRegExp.test(input.name)) {
-      error.name = 'el nombre puede contener solo letras y espacios';
+      error.name = 'only letters and spaces';
     }
     if (input.last && !nameRegExp.test(input.last)) {
-      error.last = 'el apellido puede contener solo letras y espacios';
+      error.last = 'only letters and spaces';
     }
    
     if (input.email && !correoRegExp.test(input.email)) {
-        error.email = 'formato incorrecto';
+        error.email = 'incorrect email format';
       }
     
     if (input.phone && !telefonoRegExp.test(input.phone)) {
-        error.phone = 'Debes ingresar mas de 7 dígitos, y solo números.';
+        error.phone = 'must enter more than 7 numbers';
       }
     if (input.message && input.message.length < 10)  {
-      error.message =  'escribe un poco mas';
+      error.message =  'write a little bit more 😆';
     }
     return error;
   }

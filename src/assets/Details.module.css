@@ -7,11 +7,19 @@
   min-width: 100vw;
   color: lightgray;
 }
-
+.txt{
+  text-align: justify;
+}
 .skillslider {
     width: 90%;
     margin: 0 auto;
     position: relative; 
+  }
+  .title{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 2em;
+    font-size:30px
   }
   .skillslider img {
     width: 50%;
@@ -29,4 +37,10 @@
   }
   .containerslider {
     margin-bottom: 2em;
+  }
+
+  @media only screen and (max-width: 768px){
+    .containerDetail h3{
+      margin-top: 2em;
+    }
   }

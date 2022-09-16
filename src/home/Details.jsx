@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import { useParams,useNavigate} from "react-router-dom";
+import {Container,Row, Col } from "react-bootstrap";
 import s from "../assets/Details.module.css";
 import { projects} from "../constantes.js";
 
@@ -32,27 +33,28 @@ export default function Details( ) {
 }
   return (
     <div className={s.containerDetail}>
-      <div className="text-center display-1 fw-bold pt-4">{det.title}</div>
-      <div className="row mt-5">   
-          <div className="col-4 m-auto">
+      <div className={s.title}>{det.title}</div>
+      <Container>
+      <Row className="mt-5">   
+          <Col xs={10} md={5} xl={4}className="m-auto">
                 <img 
                     src={det.imgUrl}
                     alt="foto"
                     className="img"
                 />
-            </div>
+            </Col>
 
-            <div className="col-7 m-auto">
+            <Col xs={10}md={6} xl={7} className="m-auto">
                 <h3> FEATURES </h3>
                 <ul className="list-group">
-                    <li className="list-group-item text-start bg-transparent text-reset"><b> Summary: </b>{det.sumary}</li>
+                    <li className="list-group-item text-start bg-transparent text-reset"><b> Summary: </b> <p className={s.txt}>{det.sumary}</p></li>
                     <li className="list-group-item text-start bg-transparent text-reset" > <b> Site: </b> 
                     <a href={det.Url} target="_blank" rel="noopener noreferrer">{det.Url}</a></li>
                 </ul>
 
-            </div>
-</div>
-
+            </Col>
+</Row>
+</Container>
 <div   className={s.containerslider}>
       <h1> Photos</h1>
       <Carousel

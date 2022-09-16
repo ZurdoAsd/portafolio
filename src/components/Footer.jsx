@@ -21,7 +21,7 @@ export default function Footer() {
          <FaArrowUp/>
         </button></Nav.Link>
           <Col size={6} sm={6} className={s.blockimg}>
-          <h2>Thanks for visit my portafolio!</h2>
+          <h2>Thanks for visiting my portafolio!</h2>
          
           </Col>
           <Col size={12} sm={6} className={s.blockimgright}>

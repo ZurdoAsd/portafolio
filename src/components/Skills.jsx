@@ -12,15 +12,14 @@ export default function Skills() {
         <div className="row">
           <div className="col-12">
             <h2>Skills</h2>
-            <h3>
-              Yo de nuevo...<br></br>
-              como empezar con esto 🤔,
-              <br></br> dentro de mis habilidades creo poder
-              destacar:
+            <h3>  Me again...<br></br>
+            how to get started🤔?,
+              <br></br> among my skills I believe I can
+              stand out:
   </h3>
               <div className={s.stick}>
           
-            <h3> Algunas de mis habilidades blandas como:</h3>
+            <h3> Some of my soft skills like:</h3>
             {SoftSkills.map( (e) =>{
               return( 
               <div key={e.id}>
@@ -34,7 +33,7 @@ export default function Skills() {
             </div>
 
    <div className={s.stick}>
-              <h3> Algunas de mis habilidades técnicas como:</h3>
+              <h3> Some of my technical skills like:</h3>
 
               <br />
               <p>- Front-end: </p>

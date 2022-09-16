@@ -8,7 +8,7 @@ export const projects = [
       type:"single",
       imgUrl: require("./amgcards/pokeapi/landingpoke.jpeg"),
       Url:"https://poke-app-19.vercel.app/",
-      sumary:"Este fue un proyecto individual de Henry`s Bootcamp Full Web Developer. Esta app consta de una Single Page Aplication (SPA) basada con tematica de Pokémon cuya información surge de una API REST. dentro de sus funcionalidades estan las de crear, filtrar, ordenar y buscar Pokémons de primera generacion, y obtener una informacion detallada de estos.",
+      sumary:"This was an individual project of Henry`s Bootcamp Full Web Developer. This app consists of a Single Page Application (SPA) based on Pokémon theme whose information is consumed from a REST API. Among its functionalities are to create, filter, sort and search for first generation Pokémons, and get detailed information about them.",
       fotos:[
         {nameimg: require("./amgcards/pokeapi/homepoke.jpeg"),title:"Home"}, 
         {nameimg: require("./amgcards/pokeapi/searchpoke.jpeg"),title:"Search"},
@@ -21,7 +21,7 @@ export const projects = [
       type:"group",
       imgUrl:  require("./amgcards/CLub/landingclub.jpeg"),
       Url:"https://club-henry.vercel.app",
-      sumary:"Este fue un proyecto grupal de Henry`s Bootcamp Full Web Developer.Esta app consta de una plataforma que proporcione un sistema administrativo para club deportivo. Dentro de sus funcionalidades están contemplado satisfacer la experiencia tanto del administrador, dependientes y socios del mismo. Esto a través de paneles personalizados que permite al administrador mejorar el control organizacional y proporcionar información a los socios en forma simple. Y por parte de los socios este tiene posibilidad de modificar sus datos personales, suscribirse a una o más actividades disponibles (por medio de mercado pago), efectuar comentarios en las publicaciones del Club y posee un contacto directo con la Administración.",
+      sumary:"This was a group project of Henry`s Bootcamp Full Web Developer. This app consists of a platform that provides an administrative system for a sports club. Among its features are contemplated to satisfy the experience of both the administrator, employees and members of the same. This through customized panels that allow the administrator to improve organizational control and provide information to members in a simple way. And the members have the possibility to modify their personal data, subscribe to one or more available activities (through the Mercado Pago), make comments on the Club's publications and have a direct contact with the Administration.",
       fotos:[    
          {nameimg: require("./amgcards/CLub/home1club.jpeg"),title:"Home"}, 
          {nameimg: require("./amgcards/CLub/dashboardClub.jpeg"),title:"Dashboard"},

@@ -17,10 +17,8 @@ export default function Projects() {
         <Row>
           <Col size={12} className="mx-auto">
                 <h2>Projects</h2>
-                <p>A traves de esta seccion del portafolio intentare ir subiendo diversos proyectos 
-                  que vayan surguiendo segun mi aprendizaje, asi espero que no sean exigentes
-                   con los primeros. </p>
-                <p>Tambien saber mas sobre el proyecto al seleccionar sobre ellos</p>
+                <p>Through this section, I will try to upload various projects that arise according to my learning, so I hope you like them: </p>
+                <p>To learn more about the project by clicking on them:</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="cero">
                   <Nav   
                   className="mb-5 mt-5 mr-5 justify-content-center align-items-center text-dark fw-bold" 

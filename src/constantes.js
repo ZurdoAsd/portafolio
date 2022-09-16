@@ -19,15 +19,15 @@ export const projects = [
       title: "Club Deportivo",
       description: "Design & Development",
       type:"group",
-      imgUrl:  require("./amgcards/CLub/landingclub.jpeg"),
+      imgUrl:  require("./amgcards/CLub/landingclub.jpg"),
       Url:"https://club-henry.vercel.app",
       sumary:"This was a group project of Henry`s Bootcamp Full Web Developer. This app consists of a platform that provides an administrative system for a sports club. Among its features are contemplated to satisfy the experience of both the administrator, employees and members of the same. This through customized panels that allow the administrator to improve organizational control and provide information to members in a simple way. And the members have the possibility to modify their personal data, subscribe to one or more available activities (through the Mercado Pago), make comments on the Club's publications and have a direct contact with the Administration.",
       fotos:[    
-         {nameimg: require("./amgcards/CLub/home1club.jpeg"),title:"Home"}, 
-         {nameimg: require("./amgcards/CLub/dashboardClub.jpeg"),title:"Dashboard"},
-         {nameimg: require("./amgcards/CLub/calendarclub.jpeg"),title:"Calendar"},
-         {nameimg: require("./amgcards/CLub/loginclub.jpeg"),title:"Login"},
-         {nameimg: require("./amgcards/CLub/registerclub.jpeg"),title:"Register"},
+         {nameimg: require("./amgcards/CLub/home1club.jpg"),title:"Home"}, 
+         {nameimg: require("./amgcards/CLub/dashboardClub.jpg"),title:"Dashboard"},
+         {nameimg: require("./amgcards/CLub/calendarclub.jpg"),title:"Calendar"},
+         {nameimg: require("./amgcards/CLub/loginclub.jpg"),title:"Login"},
+         {nameimg: require("./amgcards/CLub/registerclub.jpg"),title:"Register"},
     ] },
   ]
 

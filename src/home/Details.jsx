@@ -29,7 +29,7 @@ export default function Details( ) {
 
   let det = projects.find((e) => e.title.trim() === id);
   const handleReturn = () => {
-    navigate('/home');
+    navigate('/');
 }
   return (
     <div className={s.containerDetail}>

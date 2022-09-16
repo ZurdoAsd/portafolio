@@ -37,7 +37,7 @@ export default function Projects() {
                   <Tab.Pane eventKey="cero">
                       <Row >
                         {projects.map((e) => {
-                            return (<NavLink to={"/home/"+ e.title}key={e.id}> 
+                            return (<NavLink to={"/"+ e.title}key={e.id}> 
                             <Card  imgUrl={e.imgUrl} title={e.title} description={e.description} /> </NavLink>)})
                         }
                       </Row>
@@ -45,7 +45,7 @@ export default function Projects() {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {single.map((e) => {
-                            return (<NavLink to={"/home/"+ e.title}key={e.id}> 
+                            return (<NavLink to={"/"+ e.title}key={e.id}> 
                             <Card  imgUrl={e.imgUrl} id={e.id} title={e.title} description={e.description} /> </NavLink>)})
                         }
                       </Row>
@@ -54,7 +54,7 @@ export default function Projects() {
                     <Row>
                     {group.map((e) => {
                             return (
-                              <NavLink to={"/home/"+ e.title}key={e.id}> 
+                              <NavLink to={"/"+ e.title}key={e.id}> 
                               <Card imgUrl={e.imgUrl} id={e.id}title={e.title} description={e.description} imgs={e.imgs}  /> </NavLink>)}) }
                     </Row>
                     </Tab.Pane>

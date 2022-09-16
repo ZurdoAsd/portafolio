@@ -1,5 +1,5 @@
 .banner {
-    background: url("../fondos/banner.jpg") no-repeat center center fixed;
+    background: url("../fondos/banner.jpg") no-repeat center center;
     background-size: cover;
     background-position: relative;
     color:rgba(232, 219, 219, 0.858);

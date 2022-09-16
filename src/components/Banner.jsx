@@ -17,20 +17,16 @@ export default function Banner() {
             <h2> {"Web Developer"}</h2>  
               <br />
            
-            <p> Hola...</p> 
-            <p> Soy nuevo en este mundo del desarrollo web,
-               comencé mi formación la bootcamp de Henry, donde forje bases solidas tanto en el back-end como en el front-end,
-               comence con algunos pequeños ejecicios de JavaScript
-               , donde me llamo la atencion que no me resulto tedioso o sacrificado sin molestarme todo el tiempo que necesite invertir para estar conforme con los pequeños logros alcanzados. </p>
+            <p> Hi...</p> 
+            <p>I am new in this world of web development, I started my training in the SoyHenry bootcamp, where I forged solid foundations in both back-end and front-end, orienting myself in the latter.
+Where after long hours invested, I'm happy with the small achievements, which started with some small JavaScript exercises, and took shape with the development of projects that can be seen in this portfolio.</p>
                <button onClick={()=>setMore(!more)}className={s.more}>
               About me
               </button>   
              {more?( <div className="mb-2">
-            <p> Por cierto si, el sujeto de la foto, mi comienzo no fue facil por que no tengo ningun estudio previo IT, lo que contrario a lo parece no fue un limitante
-               sino una motivacion para poder estar a nivel de mis compañeros, lo que dio lugar a varias noches intentando resolver ejercicios
-               en forma individual y con ayuda de compañeros, y sentir que empezaba a avanzar.  </p>
-            <p> Por el momento me considero un desarrollador web junior, con conocimientos de Front-end y Back-end,
-              sin ninguna preferencia al respecto, creo que eso se dara con el tiempo.
+            <p>By the way yes, I am the subject of the photo, my beginning was not easy because I have no previous IT study, which contrary to what it seems was not a limiting factor, but a motivation to be able to be at the level of my classmates.
+ but a motivation to be at the level of my classmates, which resulted in several nights trying to solve exercises individually and with the help of colleagues, and feel that little by little the theory began to take shape.  </p>
+            <p> At the moment, I consider myself a junior web developer, with Front-end and Back-end knowledge, but with the clear goal of where to invest my professional development.
             </p></div>
               ):null}
           </Col>

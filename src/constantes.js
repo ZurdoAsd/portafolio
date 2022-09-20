@@ -3,7 +3,7 @@ export const projects = [
 
     {
       id:1,
-      title: "Poke-app",
+      title: "Poke-App",
       description: "Design & Development",
       type:"single",
       imgUrl: require("./amgcards/pokeapi/landingpoke.jpeg"),
@@ -35,19 +35,19 @@ export const projects = [
   export const SoftSkills = [
     {
       id:1,
-      title: "-Comunicacion",
-      description:" Considero vital este aspecto, pues comunicarse en forma clara permite generar un gran ambiente de trabajo, asi como percibir un mensaje en forma correcta ayuda a generar empatia y abre la posibilidad de mayor participation. "   
+      title: "-Communication",
+      description:"I am a very perceptive and respectful person to the time of conversation, as well as to contribute my ideas in a constructive way. I consider this aspect vital, because communicating clearly allows for a great work environment, as well as perceiving a message in the right way helps to generate empathy and opens the possibility of greater participation."   
     },
     {
       id:2,
-      title: "-Resolver problemas",
-      description: " No quiero sonar soberbio, pero me considero como alguien que puede dar un aporte, tras analizar la situacion en forma globalization, sea tanto al momento de trabajar en equipo como al momento de desarrollar proyectos. Esto sea que importe investigar sobre un tema especifico o buscar como lograr que la interaccion con los demas logre ser fluida.",
+      title: "-Solve problems",
+      description: " I don't want to sound arrogant, but I consider myself as someone who can give a contribution, after analyzing the situation as a whole, both when working in a team and when developing projects. Whether it's research on a specific topic or how to make the interaction with others go smoothly. ",
    },
     
    {
     id:3,
-    title: "-Investigar antes de preguntar",
-    description: " Esto no lo considero una habildad en si misma, sino que forma parte de mi formacion autodidacta, ya que voy a requerir ayuda de alguien, es necesario realizar un esfuerzo previo, pues el tiempo prestado por los demas es valioso, y el provecho que le puedo sacar va a ser mayor si las dudas que comparto surgen luego de haberlo intentado."
+    title: "-Investigate before you ask",
+    description: " I do not consider this a skill in itself, but part of my self-taught training, since in case I need help from someone, I consider it prudent to make a previous effort, since the time lent by others is valuable, and the benefit I can get from it will be greater if the doubts I share arise after having tried it. "
    },
   ]
 

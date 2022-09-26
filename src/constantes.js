@@ -10,7 +10,6 @@ export const projects = [
       Url:"https://poke-app-19.vercel.app/",
       sumary:"This was an individual project of Henry`s Bootcamp Full Web Developer. This app consists of a Single Page Application (SPA) based on Pokémon theme whose information is consumed from a REST API. Among its functionalities are to create, filter, sort and search for first generation Pokémons, and get detailed information about them.",
       tech:['NodeJs', 'Express', 'Sequelize', 'Postgres', 'React', 'Redux', 'HTML', 'CSS', 'Javascript'],
-      // "NodeJs, Express, Sequelize, Postgres, React, Redux, HTML, CSS, Javascript",
       fotos:[
         {nameimg: require("./amgcards/pokeapi/homepoke.jpeg"),title:"Home"}, 
         {nameimg: require("./amgcards/pokeapi/searchpoke.jpeg"),title:"Search"},

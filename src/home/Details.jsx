@@ -48,6 +48,7 @@ export default function Details( ) {
                 <h3> FEATURES </h3>
                 <ul className="list-group">
                     <li className="list-group-item text-start bg-transparent text-reset"><b> Summary: </b> <p className={s.txt}>{det.sumary}</p></li>
+                    <li className="list-group-item text-start bg-transparent text-reset"><b> Tech: </b> <p className={s.txt}>{new Intl.ListFormat('en').format(det.tech)+ "."}</p></li>
                     <li className="list-group-item text-start bg-transparent text-reset" > <b> Site: </b> 
                     <a href={det.Url} target="_blank" rel="noopener noreferrer">{det.Url}</a></li>
                 </ul>

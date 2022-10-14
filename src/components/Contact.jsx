@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import s from "../assets/contact.module.css";
-import {servicemail,templateemail,service2email} from "../constantes";
+import {servicemail,templateemail,service2email} from "../constantes/constantes";
 import validate from "./validate"
 import emailjs from '@emailjs/browser';
 

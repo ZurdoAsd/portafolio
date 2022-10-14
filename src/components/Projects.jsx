@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import Card  from "./Card";
-import{projects} from "../constantes.js";
+import{projects} from "../constantes/constantes";
  import { NavLink } from "react-router-dom";
 import s from "../assets/projects.module.css"
 

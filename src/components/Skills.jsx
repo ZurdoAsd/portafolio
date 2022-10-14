@@ -1,7 +1,7 @@
 import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import s from "../assets/skills.module.css";
-import {SoftSkills} from "../constantes"
+import {SoftSkills} from "../constantes/constantes"
 
 export default function Skills() {
   const detUrl =

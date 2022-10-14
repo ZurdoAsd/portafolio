@@ -11,12 +11,10 @@ export default function Banner() {
       <Container>
         <Row>
           <Col xs={12} md={8} xl={9} className="order-1 order-sm-0">
-            <h1>
-              {`Aldo Gaspar`} </h1>
+            <h1>{`Aldo Gaspar`} </h1>
               <br />     
             <h2> {"Web Developer"}</h2>  
               <br />
-           
             <p> Hi...</p> 
             <p>I am new in this world of web development, I started my training in the SoyHenry bootcamp, where I forged solid foundations in both back-end and front-end, orienting myself in the latter.
 Where after long hours invested, I'm happy with the small achievements, which started with some small JavaScript exercises, and took shape with the development of projects that can be seen in this portfolio.</p>

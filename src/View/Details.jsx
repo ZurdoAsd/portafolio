@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import { useParams,useNavigate} from "react-router-dom";
 import {Container,Row, Col } from "react-bootstrap";
 import s from "../assets/Details.module.css";
-import { projects} from "../constantes/constantes";
+import { projects} from "../constantes/data";
 
 export default function Details( ) {
   const { id } = useParams();

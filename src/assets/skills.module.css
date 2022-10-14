@@ -1,66 +1,64 @@
-
 .skill {
-    padding: 3em 0 3em 0;
-    min-height: 100vh;
-    height: 100%;
-  background: url(
-   "../fondos/skills.jpg") no-repeat center center;
- background-size: cover;   
- width: 100%;
+  padding: 3em 0 3em 0;
+  min-height: 100vh;
+  height: 100%;
+  background: url("../utils/fondos/skills.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
 }
 
-  .skill h2 {
-      font-size: 45px;
-      font-weight: 700;
-  }
-  .skill h3 {
-    font-size: 30px;
-    font-weight: 700;
-    text-align: start;
-    margin-top: 1em;
-    margin-bottom: 1em;
+.skill h2 {
+  font-size: 45px;
+  font-weight: 700;
 }
-  .skill p {
-      text-indent: 40px;
-      font-size: 18px;
-      letter-spacing: 0.8px;
-      line-height: 1.5em;
-      text-align: left;
-      margin: 2em auto 0.5em 1em;
-      font-weight: bold;
-      text-align:justify;
-      width: 70%;
-  }
-  .skill .stick img {
-    width: 60px;
-    height: 60px;
+.skill h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: start;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.skill p {
+  text-indent: 40px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  text-align: left;
+  margin: 2em auto 0.5em 1em;
+  font-weight: bold;
+  text-align: justify;
+  width: 70%;
+}
+.skill .stick img {
+  width: 60px;
+  height: 60px;
   margin-left: 2em;
+}
+
+.stick {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+.stick h3 {
+  margin-left: 0;
+  margin-bottom: 0.8em;
+  width: 90%;
+  max-width: 100%;
+  height: fit-content;
+}
+.stick h2 {
+  font-size: 22px;
+  margin-left: 0;
+  margin-bottom: 0.8em;
+  width: 90%;
+  max-width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .skill p {
+    margin: 2em auto 0.5em auto;
+    width: 100%;
   }
-  
-  .stick{
- width:100%; 
- display: inline-block;
-text-align: left;
-margin-bottom: 2em;
-  }
-  
-  .stick h3{
-margin-left: 0;
-margin-bottom: 0.8em;
-width:90%;
-max-width:100%;
-height: fit-content;
-  }
-  .stick h2{
-    font-size: 22px;
-    margin-left: 0;
-    margin-bottom: 0.8em;
-    width:90%;
-    max-width:100%;
-      }
-       @media only screen and (max-width: 768px){
-        .skill p {
- margin: 2em auto 0.5em auto;
- width: 100%;
-        }
-      }
+}

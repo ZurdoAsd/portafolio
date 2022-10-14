@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./home/home.jsx";
-import Detailes from "./home/Details.jsx";
+import Home from "./View/home.jsx";
+import Detailes from "./View/Details.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {

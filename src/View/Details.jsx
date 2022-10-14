@@ -51,6 +51,8 @@ export default function Details( ) {
                     <li className="list-group-item text-start bg-transparent text-reset"><b> Tech: </b> <p className={s.txt}>{new Intl.ListFormat('en').format(det.tech)+ "."}</p></li>
                     <li className="list-group-item text-start bg-transparent text-reset" > <b> Site: </b> 
                     <a href={det.Url} target="_blank" rel="noopener noreferrer">{det.Url}</a></li>
+                    <li className="list-group-item text-start bg-transparent text-reset" > <b> Code: </b> 
+                    <a href={det.source} target="_blank" rel="noopener noreferrer">{det.source}</a></li>
                 </ul>
 
             </Col>
